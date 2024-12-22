@@ -56,10 +56,45 @@ function min_path(W)
     V = objective_value(model)
     return T, V
 end
-# Radio Muhamed Husić
+
 # Testiranje
 W = [0 2 3 Inf 8 Inf Inf Inf; 2 0 4 Inf 9 Inf Inf Inf; 3 4 0 7 Inf Inf Inf Inf; Inf Inf 7 0 4 3 Inf Inf; 8 Inf Inf 4 0 5 5 Inf; Inf 9 Inf 3 5 0 7 6; Inf Inf Inf Inf 5 7 0 1; Inf Inf Inf Inf Inf 6 1 0]
 T, V = min_path(W)
+println("T =")
+println(T)
+println("V =")
+println(V)
+
+# Testovi  s interneta
+W = [0 12 18 24; 12 0 36 28; 18 36 0 32; 24 28 32 0]
+T, V = min_path(W);
+println("T =")
+println(T)
+println("V =")
+println(V)
+
+W = [
+    0 10 15 20;
+    10 0 35 25;
+    15 35 0 30;
+    20 25 30 0
+]
+T, V = min_path(W);
+println("T =")
+println(T)
+println("V =")
+println(V)
+
+W = [
+    0 6 2 Inf Inf Inf Inf;
+    Inf 0 Inf 5 Inf Inf Inf;
+    Inf Inf 0 Inf 7 8 Inf;
+    Inf Inf Inf 0 4 Inf 3;
+    Inf Inf Inf Inf 0 Inf 10;
+    Inf Inf Inf Inf Inf 0 1;
+    Inf Inf Inf Inf Inf Inf 0
+]
+T, V = min_path(W);
 println("T =")
 println(T)
 println("V =")
