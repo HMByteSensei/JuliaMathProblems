@@ -35,7 +35,7 @@ M = [80 20 23; 31 40 12; 61 1 1]
 
 raspored, Z = rasporedi(M)
 println("Matrica raspored:")
-display(raspored)
+println(raspored)
 println("\nVrijednost funkcije cilja Z: ", Z)
 
 # Example 2
